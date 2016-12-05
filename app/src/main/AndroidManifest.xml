@@ -18,7 +18,12 @@
 
         <activity
             android:launchMode="singleTop"
-            android:name=".activity.ActivitySecond"/>
+            android:name=".activity.ActivitySecond">
+            <intent-filter>
+                <action android:name="android.intent.action.TESTLAUNCHMODE_SECOND_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
